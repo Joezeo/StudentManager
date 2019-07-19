@@ -3,12 +3,17 @@ package com.joezeo.core;
 import java.io.IOException;
 import java.net.ServerSocket;
 
+/**
+ * 学生管理系统服务器端
+ */
 public class Server {
     /**
-     * 服务器套接字socket对象
+     * 服务器套接字socket对象 使用单例模式
      */
     private static ServerSocket server;
-
+    // 私有化构造器
+    private Server(){
+    }
     /**
      * 静态初始化块：初始化服务器socket
      */
