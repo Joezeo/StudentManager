@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--声明外部DTD-->
+<!--貌似原生Sax解析不能直接处理DTD，先不适用-->
+<!ELEMENT db-info (driver+,url+,user+,pwd+,usingDB+,queryClass+)>
+<!ELEMENT driver (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT user (#PCDATA)>
+<!ELEMENT pwd (#PCDATA)>
+<!ELEMENT usingDB (#PCDATA)>
+<!ELEMENT queryClass (#PCDATA)>

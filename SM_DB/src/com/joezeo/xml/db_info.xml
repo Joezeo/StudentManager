@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<db-info>
+    <driver>com.mysql.jdbc.Driver</driver>
+    <url>jdbc:mysql://localhost:3306/student?useSSL=false</url>
+    <user>root</user>
+    <pwd>funkey2012</pwd>
+    <usingDB>mysql</usingDB>
+    <queryClass>com.joezeo.core.MysqlQuery</queryClass>
+</db-info>
