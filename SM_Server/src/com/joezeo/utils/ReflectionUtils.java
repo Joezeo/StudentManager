@@ -1,6 +1,5 @@
 package com.joezeo.utils;
 
-import com.joezeo.core.Request;
 import com.joezeo.message.RequestMessage;
 import com.joezeo.opration.Opration;
 
@@ -68,7 +67,7 @@ public class ReflectionUtils {
     }
 
     /**
-     * 执行methodName相应的方法(------------------还未完成----------------------)
+     * 执行methodName相应的方法
      *
      * @param methodName 方法名
      * @param clazz      Class对象
@@ -86,6 +85,18 @@ public class ReflectionUtils {
             try {
                 Method m = clazz.getDeclaredMethod(methodName, new Class[]{Integer.class, String.class});
                 m.invoke(opration, msg.getId(), msg.getPwd());
+            } catch (NoSuchMethodException e) {
+                e.printStackTrace();
+                System.out.println("没有找到相应的Opration方法：" + methodName);
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            } catch (InvocationTargetException e) {
+                e.printStackTrace();
+            }
+        } else if (methodName.equals("addStudent")) {
+            try {
+                Method m = clazz.getDeclaredMethod(methodName, new Class[]{Integer.class, String.class});
+                m.invoke(opration, msg.getId(), msg.getName());
             } catch (NoSuchMethodException e) {
                 e.printStackTrace();
                 System.out.println("没有找到相应的Opration方法：" + methodName);

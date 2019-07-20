@@ -3,6 +3,7 @@ package com.joezeo.core;
 import com.joezeo.message.RequestMessage;
 import com.joezeo.message.ResponseMessage;
 import com.joezeo.opration.Opration;
+import com.joezeo.utils.CloseUtils;
 import com.joezeo.utils.ReflectionUtils;
 
 import java.io.IOException;
@@ -33,7 +34,7 @@ public class Request {
     }
 
     /**
-     * 向外界提供的公共方法
+     * 向外界提供的公共方法：
      * 包含对客户端请求信息的一系列操作
      */
     public ResponseMessage handleRequest() {
@@ -41,6 +42,8 @@ public class Request {
 
         //根据msg内容进行相应的反射操作
         ResponseMessage resMsg = doReflection();
+
+        CloseUtils.close(is);
 
         return resMsg;
     }
@@ -62,6 +65,10 @@ public class Request {
         }
     }
 
+    /**
+     * 通过请求信息执行相应的反射操作
+     * @return 响应信息
+     */
     private ResponseMessage doReflection() {
         String methodName = msg.getOprationName();
         String character = msg.getCharacter();

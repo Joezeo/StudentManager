@@ -1,7 +1,9 @@
 package com.joezeo.core;
 
 import com.joezeo.message.ResponseMessage;
+import com.joezeo.utils.CloseUtils;
 
+import java.io.IOException;
 import java.io.ObjectOutputStream;
 
 /**
@@ -28,10 +30,22 @@ public class Response {
     }
 
     /**
-     * 向外界提供的公共方法
+     * 向外界提供的公共方法：
      * 包含对服务器端响应信息的一系列操作
      */
     public void handleResponse(ResponseMessage msg) {
         this.msg = msg;
+        sendResponse();
+        CloseUtils.close(os);
+    }
+
+    private void sendResponse(){
+        try {
+            os.writeObject(msg);
+            os.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("发送响应信息失败 当前线程：" + Thread.currentThread().getName());
+        }
     }
 }
