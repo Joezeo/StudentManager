@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca9b90a0-3ad3-4075-8c4e-e9fb95274371" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/SM_Server/src/com/joezeo/core/Channel.java" beforeDir="false" afterPath="$PROJECT_DIR$/SM_Server/src/com/joezeo/core/Channel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SM_Server/src/com/joezeo/core/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/SM_Server/src/com/joezeo/core/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SM_Server/src/com/joezeo/core/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/SM_Server/src/com/joezeo/core/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SM_Server/src/com/joezeo/message/RequestMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/SM_Server/src/com/joezeo/message/RequestMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SM_Server/src/com/joezeo/message/ResponseMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/SM_Server/src/com/joezeo/message/ResponseMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/core/Channel.java" beforeDir="false" afterPath="$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/core/Channel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/message/RequestMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/message/RequestMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/message/ResponseMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/message/ResponseMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/scene/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/scene/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SM_Teacher_Client/com/joezeo/core/Channel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SM_Teacher_Client/com/joezeo/core/Channel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SM_Teacher_Client/com/joezeo/core/Teacher_Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SM_Teacher_Client/com/joezeo/core/Teacher_Client.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,62 +22,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SM_Server/src/com/joezeo/core/Server.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-440">
-              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SM_Server/src/com/joezeo/core/Channel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
-                <element signature="e#622#623#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SM_Server/src/com/joezeo/core/Request.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#Request#0;class#Request#0" />
-                <element signature="method#getRequestMessage#0;class#Request#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SM_Server/src/com/joezeo/core/Response.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="44" column="23" lean-forward="true" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#Response#0;class#Response#0" />
-                <element signature="method#sendResponse#0;class#Response#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -95,23 +45,24 @@
         <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/po/Student.java" />
         <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/po/Sreginfo.java" />
         <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/po/Treginfo.java" />
-        <option value="$PROJECT_DIR$/SM_Server/src/com/joezeo/message/ResponseMessage.java" />
-        <option value="$PROJECT_DIR$/SM_Server/src/com/joezeo/message/RequestMessage.java" />
         <option value="$PROJECT_DIR$/SM_Server/src/com/joezeo/opration/TOpration.java" />
         <option value="$PROJECT_DIR$/SM_Server/src/com/joezeo/opration/SOpration.java" />
         <option value="$PROJECT_DIR$/SM_Server/src/com/joezeo/core/Server.java" />
         <option value="$PROJECT_DIR$/SM_Server/src/com/joezeo/opration/Opration.java" />
         <option value="$PROJECT_DIR$/SM_Server/src/com/joezeo/utils/CloseUtils.java" />
         <option value="$PROJECT_DIR$/SM_Server/src/com/joezeo/utils/ReflectionUtils.java" />
-        <option value="$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/message/RequestMessage.java" />
         <option value="$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/core/Response.java" />
+        <option value="$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/core/Request.java" />
+        <option value="$PROJECT_DIR$/SM_Server/src/com/joezeo/core/Channel.java" />
+        <option value="$PROJECT_DIR$/SM_Server/src/com/joezeo/core/Response.java" />
+        <option value="$PROJECT_DIR$/SM_Server/src/com/joezeo/core/Request.java" />
+        <option value="$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/core/Channel.java" />
         <option value="$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/core/Teacher_Client.java" />
         <option value="$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/scene/Scene.java" />
-        <option value="$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/core/Request.java" />
-        <option value="$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/core/Channel.java" />
-        <option value="$PROJECT_DIR$/SM_Server/src/com/joezeo/core/Channel.java" />
-        <option value="$PROJECT_DIR$/SM_Server/src/com/joezeo/core/Request.java" />
-        <option value="$PROJECT_DIR$/SM_Server/src/com/joezeo/core/Response.java" />
+        <option value="$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/message/RequestMessage.java" />
+        <option value="$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/message/ResponseMessage.java" />
+        <option value="$PROJECT_DIR$/SM_Server/src/com/joezeo/message/RequestMessage.java" />
+        <option value="$PROJECT_DIR$/SM_Server/src/com/joezeo/message/ResponseMessage.java" />
       </list>
     </option>
   </component>
@@ -161,6 +112,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="joezeo" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudentManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudentManager" type="462c0819:PsiDirectoryNode" />
+              <item name="SM_Server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="joezeo" type="462c0819:PsiDirectoryNode" />
+              <item name="message" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="StudentManager" type="b2602c69:ProjectViewProjectNode" />
@@ -286,7 +245,7 @@
       <workItem from="1563528317513" duration="991000" />
       <workItem from="1563529571475" duration="179000" />
       <workItem from="1563541759425" duration="9281000" />
-      <workItem from="1563585729717" duration="7809000" />
+      <workItem from="1563585729717" duration="8062000" />
     </task>
     <task id="LOCAL-00001" summary="创建StudentManager项目&#10;项目目标：巩固javaSE相关知识，打好基础">
       <created>1563526623943</created>
@@ -351,11 +310,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563592870348</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="修改服务器端启动输入、输出流的位置以解决死循环">
+      <created>1563593701443</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1563593701443</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20479000" />
+    <option name="totallyTimeSpent" value="20732000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="102" y="-7" width="1442" height="878" extended-state="6" />
@@ -432,7 +398,8 @@
     <MESSAGE value="完善SM_Server模块：响应处理Request" />
     <MESSAGE value="修改注释信息" />
     <MESSAGE value="完成客户端登欢迎、登陆、注册界面以及发送请求功能&#10;客户端接受、发送需要修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成客户端登欢迎、登陆、注册界面以及发送请求功能&#10;客户端接受、发送需要修改" />
+    <MESSAGE value="修改服务器端启动输入、输出流的位置以解决死循环" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改服务器端启动输入、输出流的位置以解决死循环" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/core.java" />
@@ -491,27 +458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SM_Server/src/com/joezeo/message/ResponseMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-          <folding>
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#587#588#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#665#666#0" expanded="true" />
-            <element signature="e#725#726#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SM_Server/src/com/joezeo/opration/SOpration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -550,45 +496,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SM_Server/src/com/joezeo/message/RequestMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#1086#1087#0" expanded="true" />
-            <element signature="e#1113#1114#0" expanded="true" />
-            <element signature="e#1153#1154#0" expanded="true" />
-            <element signature="e#1185#1186#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/message/Message.java">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/message/ResponseMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/message/RequestMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/core/Teacher_Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="55" column="20" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SM_Server/src/com/joezeo/utils/ReflectionUtils.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -608,37 +517,6 @@
           <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/core/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/core/Channel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/scene/Scene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="74" column="33" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#welcomeScene#0;class#Scene#0" />
           </folding>
         </state>
       </provider>
@@ -665,18 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SM_Server/src/com/joezeo/core/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Request#0;class#Request#0" />
-            <element signature="method#getRequestMessage#0;class#Request#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SM_Server/src/com/joezeo/core/Response.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
@@ -685,6 +551,108 @@
             <element signature="imports" expanded="true" />
             <element signature="method#Response#0;class#Response#0" />
             <element signature="method#sendResponse#0;class#Response#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SM_Server/src/com/joezeo/core/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="65" column="13" lean-forward="true" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Request#0;class#Request#0" />
+            <element signature="method#handleRequest#0;class#Request#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/core/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/core/Channel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#643#644#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/core/Teacher_Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/scene/Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding>
+            <element signature="method#welcomeScene#0;class#Scene#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/message/RequestMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/message/ResponseMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="4" column="61" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SM_Server/src/com/joezeo/message/RequestMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+          <folding>
+            <element signature="e#1086#1087#0" expanded="true" />
+            <element signature="e#1113#1114#0" expanded="true" />
+            <element signature="e#1153#1154#0" expanded="true" />
+            <element signature="e#1185#1186#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SM_Server/src/com/joezeo/message/ResponseMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="4" column="61" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
+          <folding>
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#501#502#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#665#666#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
           </folding>
         </state>
       </provider>

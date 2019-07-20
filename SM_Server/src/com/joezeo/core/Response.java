@@ -44,7 +44,6 @@ public class Response {
     public void handleResponse(ResponseMessage msg) {
         this.msg = msg;
         sendResponse();
-        CloseUtils.close(os);
     }
 
     private void sendResponse() {

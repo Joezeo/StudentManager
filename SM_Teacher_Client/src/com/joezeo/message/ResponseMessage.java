@@ -1,6 +1,8 @@
 package com.joezeo.message;
 
-public class ResponseMessage implements Message {
+import java.io.Serializable;
+
+public class ResponseMessage implements Message, Serializable {
     /**
      * 是否登陆成功 只有在进行登陆操作时才有此值
      */

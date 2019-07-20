@@ -39,8 +39,6 @@ public class Channel {
      */
     public Channel(Socket client) {
         this.client = client;
-        this.request = new Request(client, reqMsg);
-       // this.response = new Response(client);
     }
 
     /**
@@ -59,7 +57,9 @@ public class Channel {
      * 执行发送请求、获取响应等相关操作
      */
     public void run() {
+        request = new Request(client, reqMsg);
         request.handleRequest();
+
         response = new Response(client);
         response.handleResponse();
     }

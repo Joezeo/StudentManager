@@ -1,6 +1,5 @@
 package com.joezeo.scene;
 
-import com.joezeo.core.Request;
 import com.joezeo.message.RequestMessage;
 
 import java.util.Scanner;

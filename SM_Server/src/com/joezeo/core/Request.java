@@ -51,7 +51,6 @@ public class Request {
         //根据msg内容进行相应的反射操作
         ResponseMessage resMsg = doReflection();
 
-        CloseUtils.close(is);
         return resMsg;
     }
 

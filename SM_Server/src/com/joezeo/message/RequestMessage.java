@@ -1,9 +1,11 @@
 package com.joezeo.message;
 
+import java.io.Serializable;
+
 /**
  * requestMessage 从客户端发出，服务器输入流中获取
  */
-public class RequestMessage implements Message {
+public class RequestMessage implements Message, Serializable {
     /**
      * 需要执行操作的方法名
      */
