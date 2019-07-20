@@ -1,7 +1,6 @@
 package com.joezeo.core;
 
 import com.joezeo.message.ResponseMessage;
-import com.joezeo.utils.CloseUtils;
 
 import java.io.BufferedOutputStream;
 import java.io.IOException;

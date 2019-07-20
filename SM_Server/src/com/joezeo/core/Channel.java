@@ -1,7 +1,6 @@
 package com.joezeo.core;
 
 import com.joezeo.message.ResponseMessage;
-import com.joezeo.utils.CloseUtils;
 
 import java.net.Socket;
 
@@ -27,6 +26,11 @@ public class Channel implements Runnable {
     private Response response;
 
     /**
+     * 当前客户端线程是否在运行
+     */
+    private boolean isRunning;
+
+    /**
      * 构造方法 获取对应客户端socket的输入、输出流
      * 初始化处理请求和响应的对象
      *
@@ -34,6 +38,7 @@ public class Channel implements Runnable {
      */
     public Channel(Socket client) {
         this.client = client;
+        isRunning = true;
     }
 
     /**
@@ -41,12 +46,14 @@ public class Channel implements Runnable {
      */
     @Override
     public void run() {
-        request = new Request(client);
-        //处理请求
-        ResponseMessage resMsg = request.handleRequest();
+        while(isRunning) {
+            request = new Request(client);
+            //处理请求
+            ResponseMessage resMsg = request.handleRequest();
 
-        response = new Response(client);
-        //处理响应
-        response.handleResponse(resMsg);
+            response = new Response(client);
+            //处理响应
+            response.handleResponse(resMsg);
+        }
     }
 }
