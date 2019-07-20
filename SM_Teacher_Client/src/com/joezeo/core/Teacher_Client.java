@@ -25,8 +25,10 @@ public class Teacher_Client {
             System.out.println("ERROR：初始化教师客户端失败");
         }
     }
+
     /**
      * 教师端main函数入口
+     *
      * @param args
      */
     public static void main(String[] args) {

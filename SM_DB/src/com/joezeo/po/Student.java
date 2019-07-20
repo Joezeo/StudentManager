@@ -1,13 +1,13 @@
 package com.joezeo.po;
 
 /**
- * po类 ：学生
+ * po类 ：学生的具体信息 与数据库中的表对应
  */
 public class Student {
     /**
-     * 学号：为数据库主键
+     * 学号：为数据库主键 且作为登陆账号
      */
-    private int stuId;
+    private Integer stuId;
 
     /**
      * 学生姓名
@@ -22,13 +22,18 @@ public class Student {
     /**
      * 学生年龄
      */
-    private int age;
+    private Integer age;
 
-    public int getStuId() {
+    /**
+     * 学生成绩
+     */
+    private Integer score;
+
+    public Integer getStuId() {
         return stuId;
     }
 
-    public void setStuId(int stuId) {
+    public void setStuId(Integer stuId) {
         this.stuId = stuId;
     }
 
@@ -48,11 +53,11 @@ public class Student {
         this.sex = sex;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 }
