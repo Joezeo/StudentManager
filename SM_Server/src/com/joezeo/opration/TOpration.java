@@ -19,7 +19,7 @@ public class TOpration extends Opration {
 
     @Override
     public void inquiry(Integer id) {
-        //教师端不实现此方法
+
     }
 
     public TOpration() {

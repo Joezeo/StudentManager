@@ -24,6 +24,16 @@ public class Teacher_Client {
     private static boolean isRunning = false;
 
     /**
+     * 判断是否已经登陆
+     */
+    private static boolean isLogin = false;
+
+    /**
+     * 判断是否已经注册
+     */
+    private static boolean isRegister = false;
+
+    /**
      * 静态初始化块 初始化教师端套接字对象
      */
     static {
@@ -43,16 +53,38 @@ public class Teacher_Client {
      * @param args
      */
     public static void main(String[] args) {
-        boolean flag = Scene.welcomeScene();
         RequestMessage msg = null;
-        if(flag){
-            msg = Scene.login();
-        } else {
-            msg = Scene.register();
+        Channel channel = null;
+        /**
+         * 欢迎界面
+         */
+        while(!isLogin && !isRegister) {//如果没有登陆或者注册成功就一直在欢迎界面
+            boolean flag = Scene.welcomeScene();
+            if (flag) {
+                msg = Scene.login();
+            } else {
+                msg = Scene.register();
+            }
+            channel = new Channel(teacherClient, msg);
+            channel.run();
+            isLogin = channel.isLogin();
+            isRegister = channel.isRegister();
         }
-        Channel channel = new Channel(teacherClient, msg);
 
+        /**
+         * 登陆成功后
+         */
         while(isRunning){
+            int i = Scene.oprationScene();
+            switch (i){
+                case 1:
+                    msg = Scene.addStudentScene();
+                    break;
+                case 2:
+                    msg = Scene.inquiry();
+                    break;
+            }
+            channel.setReqMsg(msg);
             channel.run();
         }
     }

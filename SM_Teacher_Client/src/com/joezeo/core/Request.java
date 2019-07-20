@@ -39,7 +39,6 @@ public class Request {
         try {
             os.writeObject(msg);
             os.flush();
-            System.out.println("发送成功");
         } catch (IOException e) {
             e.printStackTrace();
         }

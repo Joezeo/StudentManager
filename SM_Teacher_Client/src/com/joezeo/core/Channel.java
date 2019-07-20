@@ -32,6 +32,12 @@ public class Channel {
     private ResponseMessage resMsg;
 
     /**
+     * 是否已经登陆、注册
+     */
+    private boolean isLogin;
+    private boolean isRegister;
+
+    /**
      * 构造方法：
      *
      * @param client 用户端套接字对象
@@ -61,5 +67,40 @@ public class Channel {
 
         response = new Response(client);
         response.handleResponse();
+
+        isLogin = response.isLogin();
+        isRegister = response.isRegister();
+    }
+
+    public RequestMessage getReqMsg() {
+        return reqMsg;
+    }
+
+    public void setReqMsg(RequestMessage reqMsg) {
+        this.reqMsg = reqMsg;
+    }
+
+    public ResponseMessage getResMsg() {
+        return resMsg;
+    }
+
+    public void setResMsg(ResponseMessage resMsg) {
+        this.resMsg = resMsg;
+    }
+
+    public boolean isLogin() {
+        return isLogin;
+    }
+
+    public void setLogin(boolean login) {
+        isLogin = login;
+    }
+
+    public boolean isRegister() {
+        return isRegister;
+    }
+
+    public void setRegister(boolean register) {
+        isRegister = register;
     }
 }

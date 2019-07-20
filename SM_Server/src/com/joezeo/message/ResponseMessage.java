@@ -4,34 +4,36 @@ import java.io.Serializable;
 
 public class ResponseMessage implements Message, Serializable {
     /**
-     * 是否登陆成功 只有在进行登陆操作时才有此值
+     * 是否登陆成功 只有在进行登陆操作时此值不为空
+     * 用字符串true false表示是否登陆成功
      */
-    private boolean isLogin;
+    private String isLogin;
 
     /**
-     * 是否注册成功 只有在进行注册操作时才有此值
+     * 是否注册成功 只有在进行注册操作时此值不为空
+     * 用字符串true false表示是否注册成功
      */
-    private boolean isRegister;
+    private String isRegister;
 
     /**
-     * 查询后获取的内容
+     * 查询后获取的内容 只有在进行查询操作时候此值不为空
      */
     private String inquiryContent;
 
-    public boolean isLogin() {
+    public String getIsLogin() {
         return isLogin;
     }
 
-    public void setLogin(boolean login) {
-        isLogin = login;
+    public void setIsLogin(String isLogin) {
+        this.isLogin = isLogin;
     }
 
-    public boolean isRegister() {
+    public String getIsRegister() {
         return isRegister;
     }
 
-    public void setRegister(boolean register) {
-        isRegister = register;
+    public void setIsRegister(String isRegister) {
+        this.isRegister = isRegister;
     }
 
     public String getInquiryContent() {
@@ -39,12 +41,6 @@ public class ResponseMessage implements Message, Serializable {
     }
 
     public void setInquiryContent(String inquiryContent) {
-        this.inquiryContent = inquiryContent;
-    }
-
-    public ResponseMessage(boolean isLogin, boolean isRegister, String inquiryContent) {
-        this.isLogin = isLogin;
-        this.isRegister = isRegister;
         this.inquiryContent = inquiryContent;
     }
 
