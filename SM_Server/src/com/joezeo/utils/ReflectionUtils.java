@@ -77,9 +77,6 @@ public class ReflectionUtils {
     public static Opration invokeOpration(String methodName, Class<Opration> clazz, RequestMessage msg) {
         Opration opration = createOpration(clazz);
 
-        /**
-         * 这里还有addStudent方法还没有写
-         */
         if (methodName.equals("login")
                 || methodName.equals("register")) {
             try {

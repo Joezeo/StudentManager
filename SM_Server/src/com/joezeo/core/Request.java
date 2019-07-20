@@ -11,7 +11,7 @@ import java.io.ObjectInputStream;
 
 /**
  * 处理客户端请求信息的类
- * 将处理后的信息放入类Message中
+ * 将处理后的信息放入类ResponseMessage中
  */
 public class Request {
     /**
