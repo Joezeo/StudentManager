@@ -1,5 +1,8 @@
 package com.joezeo.core;
 
+import com.joezeo.message.RequestMessage;
+import com.joezeo.scene.Scene;
+
 import java.io.IOException;
 import java.net.Socket;
 
@@ -12,6 +15,13 @@ public class Teacher_Client {
      */
     private static Socket teacherClient;
     //私有化构造器
+    private Teacher_Client(){
+    }
+
+    /**
+     * 客户端是否在运行
+     */
+    private static boolean isRunning = false;
 
     /**
      * 静态初始化块 初始化教师端套接字对象
@@ -19,6 +29,7 @@ public class Teacher_Client {
     static {
         try {
             teacherClient = new Socket("localhost", 8888);
+            isRunning = true;
             System.out.println("MESSAGE：初始化教师客户端成功");
         } catch (IOException e) {
             e.printStackTrace();
@@ -32,6 +43,17 @@ public class Teacher_Client {
      * @param args
      */
     public static void main(String[] args) {
+        boolean flag = Scene.welcomeScene();
+        RequestMessage msg = null;
+        if(flag){
+            msg = Scene.login();
+        } else {
+            msg = Scene.register();
+        }
+        Channel channel = new Channel(teacherClient, msg);
 
+        while(isRunning){
+            channel.run();
+        }
     }
 }

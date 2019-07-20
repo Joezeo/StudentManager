@@ -23,11 +23,6 @@ public class Channel implements Runnable {
     private ObjectOutputStream os;
 
     /**
-     * 客户端套接字 从该对象获取输入、输出流
-     */
-    private Socket client;
-
-    /**
      * 处理请求的对象
      */
     private Request request;
@@ -44,8 +39,6 @@ public class Channel implements Runnable {
      * @param client
      */
     public Channel(Socket client) {
-        this.client = client;
-
         try {
             is = new ObjectInputStream(new BufferedInputStream(client.getInputStream()));
             os = new ObjectOutputStream(new BufferedOutputStream(client.getOutputStream()));
