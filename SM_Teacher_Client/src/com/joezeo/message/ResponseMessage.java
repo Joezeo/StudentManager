@@ -4,6 +4,11 @@ import java.io.Serializable;
 
 public class ResponseMessage implements Message, Serializable {
     /**
+     * 指定序列化id
+     */
+    private static final long serialVersionUID = 5125096758372084320L;
+
+    /**
      * 是否登陆成功 只有在进行登陆操作时此值不为空
      * 用字符串true false表示是否登陆成功
      */

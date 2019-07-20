@@ -7,6 +7,11 @@ import java.io.Serializable;
  */
 public class RequestMessage implements Message, Serializable {
     /**
+     * 指定序列化id
+     */
+    private static final long serialVersionUID = 4125096758372084309L;
+
+    /**
      * 需要执行操作的方法名
      */
     private String oprationName;
