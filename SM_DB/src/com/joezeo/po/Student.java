@@ -15,16 +15,6 @@ public class Student {
     private String name;
 
     /**
-     * 学生性别
-     */
-    private String sex;
-
-    /**
-     * 学生年龄
-     */
-    private Integer age;
-
-    /**
      * 学生成绩
      */
     private Integer score;
@@ -45,19 +35,6 @@ public class Student {
         this.name = name;
     }
 
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
+    public Student() {
     }
 }
