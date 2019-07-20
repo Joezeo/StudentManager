@@ -3,7 +3,6 @@ package com.joezeo.core;
 import com.joezeo.message.ResponseMessage;
 import com.joezeo.utils.CloseUtils;
 
-import java.io.*;
 import java.net.Socket;
 
 /**
@@ -13,14 +12,9 @@ import java.net.Socket;
  */
 public class Channel implements Runnable {
     /**
-     * 输入流 接收从客户端传来的信息
+     * 客户端套接字
      */
-    private ObjectInputStream is;
-
-    /**
-     * 输出流 给客户端发送信息
-     */
-    private ObjectOutputStream os;
+    private Socket client;
 
     /**
      * 处理请求的对象
@@ -39,16 +33,7 @@ public class Channel implements Runnable {
      * @param client
      */
     public Channel(Socket client) {
-        try {
-            is = new ObjectInputStream(new BufferedInputStream(client.getInputStream()));
-            os = new ObjectOutputStream(new BufferedOutputStream(client.getOutputStream()));
-
-            request = new Request(is);
-            response = new Response(os);
-        } catch (IOException e) {
-            e.printStackTrace();
-            System.out.println("获取输入、输出流失败 当前线程：" + Thread.currentThread().getName());
-        }
+        this.client = client;
     }
 
     /**
@@ -56,18 +41,12 @@ public class Channel implements Runnable {
      */
     @Override
     public void run() {
+        request = new Request(client);
         //处理请求
         ResponseMessage resMsg = request.handleRequest();
+
+        response = new Response(client);
         //处理响应
         response.handleResponse(resMsg);
-        //停止此Channel 释放资源
-        stopChannel();
-    }
-
-    /**
-     * 停止此Channel 释放资源
-     */
-    private void stopChannel() {
-        CloseUtils.close(os, is);
     }
 }

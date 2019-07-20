@@ -6,8 +6,10 @@ import com.joezeo.opration.Opration;
 import com.joezeo.utils.CloseUtils;
 import com.joezeo.utils.ReflectionUtils;
 
+import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
+import java.net.Socket;
 
 /**
  * 处理客户端请求信息的类
@@ -26,11 +28,17 @@ public class Request {
 
     /**
      * 构造函数
+     * 初始化输入流
      *
-     * @param is 与客户端相关的输入流
+     * @param client 客户端套接字对象
      */
-    public Request(ObjectInputStream is) {
-        this.is = is;
+    public Request(Socket client) {
+        try {
+            this.is = new ObjectInputStream(new BufferedInputStream(client.getInputStream()));
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("获取输入流失败");
+        }
     }
 
     /**
@@ -43,6 +51,7 @@ public class Request {
         //根据msg内容进行相应的反射操作
         ResponseMessage resMsg = doReflection();
 
+        CloseUtils.close(is);
         return resMsg;
     }
 
@@ -65,9 +74,11 @@ public class Request {
 
     /**
      * 通过请求信息执行相应的反射操作
+     *
      * @return 响应信息
      */
     private ResponseMessage doReflection() {
+        System.out.println(msg);
         String methodName = msg.getOprationName();
         String character = msg.getCharacter();
 

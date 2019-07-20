@@ -3,8 +3,10 @@ package com.joezeo.core;
 import com.joezeo.message.ResponseMessage;
 import com.joezeo.utils.CloseUtils;
 
+import java.io.BufferedOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
+import java.net.Socket;
 
 /**
  * 处理服务器端响应的类
@@ -22,11 +24,17 @@ public class Response {
 
     /**
      * 构造函数
+     * 初始化输出流
      *
-     * @param os 与客户端相关的输入流
+     * @param client 客户端套接字对象
      */
-    public Response(ObjectOutputStream os) {
-        this.os = os;
+    public Response(Socket client) {
+        try {
+            this.os = new ObjectOutputStream(new BufferedOutputStream(client.getOutputStream()));
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("获取输出流失败");
+        }
     }
 
     /**
@@ -36,9 +44,10 @@ public class Response {
     public void handleResponse(ResponseMessage msg) {
         this.msg = msg;
         sendResponse();
+        CloseUtils.close(os);
     }
 
-    private void sendResponse(){
+    private void sendResponse() {
         try {
             os.writeObject(msg);
             os.flush();
