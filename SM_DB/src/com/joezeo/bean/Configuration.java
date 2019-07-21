@@ -1,4 +1,4 @@
-package com.joezeo.core;
+package com.joezeo.bean;
 
 /**
  * 数据库配置信息
@@ -28,6 +28,11 @@ public class Configuration {
      * 使用的数据库类型
      */
     private String usingDB;
+
+    /**
+     * po类所在的包名
+     */
+    private String poPackage;
 
     /**
      * 使用数据库类型的Query子类
@@ -80,6 +85,14 @@ public class Configuration {
 
     public void setQueryClass(String queryClass) {
         this.queryClass = queryClass;
+    }
+
+    public String getPoPackage() {
+        return poPackage;
+    }
+
+    public void setPoPackage(String poPackage) {
+        this.poPackage = poPackage;
     }
 
     public Configuration(String driver, String url, String user, String pwd, String usingDB, String queryClass) {

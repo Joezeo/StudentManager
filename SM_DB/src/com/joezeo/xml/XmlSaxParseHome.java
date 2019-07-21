@@ -1,6 +1,6 @@
 package com.joezeo.xml;
 
-import com.joezeo.core.Configuration;
+import com.joezeo.bean.Configuration;
 import org.xml.sax.SAXException;
 
 import javax.xml.parsers.ParserConfigurationException;

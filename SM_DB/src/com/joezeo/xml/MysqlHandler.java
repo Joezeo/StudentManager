@@ -1,6 +1,6 @@
 package com.joezeo.xml;
 
-import com.joezeo.core.Configuration;
+import com.joezeo.bean.Configuration;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
@@ -47,6 +47,8 @@ public class MysqlHandler extends DefaultHandler {
                 conf.setUsingDB(content);
             } else if (tag.equals("queryClass")) {
                 conf.setQueryClass(content);
+            } else if (tag.equals("poPackage")){
+                conf.setPoPackage(content);
             }
         }
     }

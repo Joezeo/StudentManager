@@ -7,4 +7,5 @@
     <pwd>funkey2012</pwd>
     <usingDB>mysql</usingDB>
     <queryClass>com.joezeo.core.MysqlQuery</queryClass>
+    <poPackage>com.joezeo.po</poPackage>
 </db-info>

@@ -33,7 +33,7 @@ public class ConnectionPool {
         pool = new ArrayList<>();
 
         while (pool.size() < MIN_CAPACITY) {
-            pool.add(DBManager.getConnection());
+            pool.add(DBManager.createConnection());
         }
     }
 

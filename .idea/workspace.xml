@@ -2,28 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca9b90a0-3ad3-4075-8c4e-e9fb95274371" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_39_bin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/CallBack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/Configuration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/ConnectionPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/DBManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/Query.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/utils/JDBCUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/xml/MysqlHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/xml/XmlSaxParseHome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/xml/db_info.dtd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/xml/db_info.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/core/Configuration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/core/ConnectionPool.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/core/DBManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/xml/MysqlHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/xml/XmlSaxParseHome.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/xml/db_info.dtd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/xml/db_info.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/bean/ColumnInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/bean/TableInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/MysqlQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/TableContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/utils/CloseUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/utils/ReflectionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/utils/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/SM_DB/META-INF/SM_DB.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/bean/ColumnInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/bean/Configuration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/bean/TableInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/core/CallBack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/core/MysqlQuery.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/core/Query.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/core/TableContext.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/po/T_student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/utils/CloseUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/utils/JDBCUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/utils/ReflectionUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/utils/StringUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SM_DB/SM_DB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SM_DB/SM_DB.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SM_Server/SM_Server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SM_Server/SM_Server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/po/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/po/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/CallBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/CallBack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/bean/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/ConnectionPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/ConnectionPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/DBManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/DBManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/Query.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SM_DB/src/com/joezeo/po/Sreginfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/po/T_sreginfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SM_DB/src/com/joezeo/po/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/po/T_student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SM_DB/src/com/joezeo/po/Treginfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/po/T_treginfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SM_DB/src/com/joezeo/utils/JDBCUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/utils/JDBCUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SM_DB/src/com/joezeo/xml/MysqlHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/xml/MysqlHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SM_DB/src/com/joezeo/xml/XmlSaxParseHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/xml/XmlSaxParseHome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SM_DB/src/com/joezeo/xml/db_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SM_DB/src/com/joezeo/xml/db_info.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/core/Configuration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/core/ConnectionPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/core/ConnectionPool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/core/DBManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/core/DBManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/po/Sreginfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/po/T_sreginfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/po/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/po/Treginfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/po/T_treginfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/xml/MysqlHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/xml/MysqlHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/xml/XmlSaxParseHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/xml/XmlSaxParseHome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/xml/db_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SM_DB/com/joezeo/xml/db_info.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,58 +57,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/core/DBManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="56" column="44" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#createConnection#0;class#DBManager#0" />
-                <element signature="method#getConnection#0;class#DBManager#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/core/ConnectionPool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1078">
-              <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#initPool#0;class#ConnectionPool#0" />
-                <element signature="method#getConnection#0;class#ConnectionPool#0" />
-                <element signature="method#close#0;class#ConnectionPool#0" />
-                <element signature="method#addConnection#0;class#ConnectionPool#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/core/Query.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="31" column="94" selection-start-line="31" selection-start-column="94" selection-end-line="31" selection-end-column="94" />
+            <state relative-caret-position="-145">
+              <caret line="115" column="6" lean-forward="true" selection-start-line="115" selection-start-column="6" selection-end-line="115" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#executeDML#0;class#Query#0" />
+                <element signature="method#insert#0;class#Query#0" />
+                <element signature="method#delete#0;class#Query#0" />
+                <element signature="method#update#0;class#Query#0" />
                 <element signature="method#queryTemplate#0;class#Query#0" />
+                <element signature="method#queryRow#0;class#Query#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/utils/JDBCUtils.java">
+        <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/core/MysqlQuery.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#setParams#0;class#JDBCUtils#0" />
-              </folding>
+            <state relative-caret-position="22">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -96,17 +87,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../IDEA_PROECT/SORM_1/src/com/joezeo/sorm/core/Query.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="166" column="31" selection-start-line="166" selection-start-column="18" selection-end-line="166" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/core/CallBack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            <state relative-caret-position="341">
+              <caret line="153" column="21" lean-forward="true" selection-start-line="132" selection-start-column="8" selection-end-line="153" selection-end-column="21" />
+              <folding>
+                <element signature="method#executeDML#0;class#Query#0" />
+                <element signature="method#insert#0;class#Query#0" />
+                <element signature="method#delete#0;class#Query#0" />
+                <element signature="method#delete#1;class#Query#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,8 +119,6 @@
         <option value="$PROJECT_DIR$/SM_Server/src/com/joezeo/utils/IOUtils.java" />
         <option value="$PROJECT_DIR$/SM_Server/src/com/joezeo/core/Message.java" />
         <option value="$PROJECT_DIR$/SM_Server/src/com/joezeo/message/Message.java" />
-        <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/po/Sreginfo.java" />
-        <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/po/Treginfo.java" />
         <option value="$PROJECT_DIR$/SM_Server/src/com/joezeo/core/Server.java" />
         <option value="$PROJECT_DIR$/SM_Server/src/com/joezeo/opration/Opration.java" />
         <option value="$PROJECT_DIR$/SM_Server/src/com/joezeo/utils/CloseUtils.java" />
@@ -151,18 +137,27 @@
         <option value="$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/message/RequestMessage.java" />
         <option value="$PROJECT_DIR$/SM_Server/src/com/joezeo/opration/TOpration.java" />
         <option value="$PROJECT_DIR$/SM_Server/src/com/joezeo/opration/SOpration.java" />
-        <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/po/Student.java" />
         <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/Configuration.java" />
         <option value="$PROJECT_DIR$/../../IDEA_PROECT/SORM_1/src/com/joezeo/sorm/core/DBManager.java" />
-        <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/xml/MysqlHandler.java" />
         <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/xml/XmlSaxParseHome.java" />
-        <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/xml/db_info.xml" />
         <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/xml/db_info.dtd" />
-        <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/DBManager.java" />
-        <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/ConnectionPool.java" />
+        <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/utils/CloseUtils.java" />
         <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/CallBack.java" />
-        <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/Query.java" />
+        <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/ConnectionPool.java" />
         <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/utils/JDBCUtils.java" />
+        <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/bean/TableInfo.java" />
+        <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/utils/StringUtils.java" />
+        <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/DBManager.java" />
+        <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/utils/ReflectionUtils.java" />
+        <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/bean/Configuration.java" />
+        <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/xml/db_info.xml" />
+        <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/TableContext.java" />
+        <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/po/Sreginfo.java" />
+        <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/po/Student.java" />
+        <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/po/Treginfo.java" />
+        <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/xml/MysqlHandler.java" />
+        <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/Query.java" />
+        <option value="$PROJECT_DIR$/SM_DB/src/com/joezeo/core/MysqlQuery.java" />
       </list>
     </option>
   </component>
@@ -181,6 +176,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,7 +208,23 @@
               <item name="SM_DB" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="joezeo" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudentManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudentManager" type="462c0819:PsiDirectoryNode" />
+              <item name="SM_DB" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="joezeo" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StudentManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StudentManager" type="462c0819:PsiDirectoryNode" />
+              <item name="SM_DB" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="joezeo" type="462c0819:PsiDirectoryNode" />
+              <item name="po" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="StudentManager" type="b2602c69:ProjectViewProjectNode" />
@@ -284,14 +296,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../编程/框架组件/mysql-connector-java-5.1.39-bin.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SM_DB/src/com/joezeo/core" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -303,6 +314,8 @@
       <recent name="com.joezeo.message" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\workspace\IDEA项目\StudentManager\SM_DB\src\com\joezeo\core" />
+      <recent name="F:\workspace\IDEA项目\StudentManager\SM_DB\src\com\joezeo\bean" />
       <recent name="F:\workspace\IDEA项目\StudentManager\SM_DB\src\com\joezeo" />
       <recent name="F:\workspace\IDEA项目\StudentManager\SM_Teacher_Client\src\com\joezeo" />
     </key>
@@ -319,13 +332,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DBManager">
+  <component name="RunManager" selected="Application.MysqlQuery">
     <configuration name="DBManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.joezeo.core.DBManager" />
       <module name="SM_DB" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.joezeo.core.*" />
+          <option name="PATTERN" value="com.joezeo.bean.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MysqlQuery" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.joezeo.core.MysqlQuery" />
+      <module name="SM_DB" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.joezeo.bean.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -361,6 +387,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MysqlQuery" />
         <item itemvalue="Application.DBManager" />
         <item itemvalue="Application.Teacher_Client" />
         <item itemvalue="Application.Server" />
@@ -382,7 +409,8 @@
       <workItem from="1563529571475" duration="179000" />
       <workItem from="1563541759425" duration="9281000" />
       <workItem from="1563585729717" duration="16421000" />
-      <workItem from="1563609057722" duration="6927000" />
+      <workItem from="1563609057722" duration="7050000" />
+      <workItem from="1563671169045" duration="9375000" />
     </task>
     <task id="LOCAL-00001" summary="创建StudentManager项目&#10;项目目标：巩固javaSE相关知识，打好基础">
       <created>1563526623943</created>
@@ -489,16 +517,23 @@
       <option name="project" value="LOCAL" />
       <updated>1563608775728</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="增加SM_DB数据库操作模块代码">
+      <created>1563616266081</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1563616266081</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36018000" />
+    <option name="totallyTimeSpent" value="45516000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="102" y="-7" width="1442" height="878" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990792" visible="true" weight="0.26806358" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4990792" visible="true" weight="0.2716763" />
       <window_info id="Structure" order="1" sideWeight="0.50092083" side_tool="true" weight="0.26445088" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -508,7 +543,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27211797" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -576,99 +611,10 @@
     <MESSAGE value="完成教师客户端内容" />
     <MESSAGE value="指定Message类序列化ID，解决ID不匹配的问题" />
     <MESSAGE value="修改po类" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改po类" />
+    <MESSAGE value="增加SM_DB数据库操作模块代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加SM_DB数据库操作模块代码" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/core.java" />
-    <entry file="file://$PROJECT_DIR$/SM_Server/src/com/joezeo/po/Student.java" />
-    <entry file="file://$PROJECT_DIR$/../../IDEA_PROECT/Module_1/src/com/joezeo/server/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-264" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../IDEA_PROECT/Module_1/src/com/joezeo/server/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../IDEA_PROECT/Module_1/src/com/joezeo/server/Dispatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../IDEA_PROECT/Module_1/src/com/joezeo/server/Server_02.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/net/ServerSocket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="512" column="18" selection-start-line="512" selection-start-column="18" selection-end-line="512" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SM_Server/src/com/joezeo/utils.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/net/Socket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SM_Server/src/com/joezeo/utils/CloseUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SM_Server/src/com/joezeo/message/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/message/Message.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SM_Teacher_Client/src/com/joezeo/scene/Scene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="235" column="29" lean-forward="true" selection-start-line="235" selection-start-column="29" selection-end-line="235" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#welcomeScene#0;class#Scene#0" />
-            <element signature="method#login#0;class#Scene#0" />
-            <element signature="method#register#0;class#Scene#0" />
-            <element signature="method#oprationScene#0;class#Scene#0" />
-            <element signature="method#addStudentScene#0;class#Scene#0" />
-            <element signature="method#quiry#0;class#Scene#0" />
-            <element signature="e#3840#3885#1" />
-            <element signature="method#loginSuccess#0;class#Scene#0" />
-            <element signature="e#4238#4283#1" />
-            <element signature="method#loginSuccessScene#1;class#Scene#0" />
-            <element signature="e#4609#4654#1" />
-            <element signature="method#inquiryResultScene#0;class#Scene#0" />
-            <element signature="e#4963#5008#1" />
-            <element signature="e#5425#5470#1" />
-            <element signature="e#5783#5828#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SM_Server/src/com/joezeo/core/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SM_Server/src/com/joezeo/core/Channel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="473">
@@ -813,77 +759,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/po/Sreginfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/po/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/po/Treginfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/core/Configuration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1320">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding>
-            <element signature="e#444#445#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#517#518#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-            <element signature="e#775#776#0" expanded="true" />
-            <element signature="e#807#808#0" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#863#864#0" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-            <element signature="e#931#932#0" expanded="true" />
-            <element signature="e#965#966#0" expanded="true" />
-            <element signature="e#995#996#0" expanded="true" />
-            <element signature="e#1041#1042#0" expanded="true" />
-            <element signature="e#1079#1080#0" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
-            <element signature="e#1149#1150#0" expanded="true" />
-            <element signature="e#1201#1202#0" expanded="true" />
-            <element signature="e#1245#1246#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../IDEA_PROECT/Test_Jdk_10/src/com/joezeo/jdk10/testXml/student.dtd">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/xml/MysqlHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="method#startDocument#0;class#MysqlHandler#0" />
-            <element signature="method#startElement#0;class#MysqlHandler#0" />
-            <element signature="method#characters#0;class#MysqlHandler#0" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.xml/javax/xml/parsers/SAXParser.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -902,13 +779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/xml/db_info.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/xml/db_info.dtd">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -923,30 +793,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../IDEA_PROECT/SORM_1/src/com/joezeo/sorm/core/ConnPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1122" />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/../../IDEA_PROECT/SORM_1/src/com/joezeo/sorm/core/CallBack.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/core/DBManager.java">
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="56" column="44" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
+        <state relative-caret-position="240">
+          <caret line="1833" column="18" selection-start-line="1833" selection-start-column="18" selection-end-line="1833" selection-end-column="18" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#createConnection#0;class#DBManager#0" />
-            <element signature="method#getConnection#0;class#DBManager#0" />
+            <element signature="e#104034#104035#0" expanded="true" />
+            <element signature="e#104089#104090#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../IDEA_PROECT/SORM_1/src/com/joezeo/sorm/utils/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/core/CallBack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../IDEA_PROECT/SORM_1/src/com/joezeo/sorm/core/ConnPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-727" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../IDEA_PROECT/SORM_1/src/com/joezeo/sorm/utils/JDBCUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/core/ConnectionPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1078">
-          <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+        <state relative-caret-position="164">
+          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#initPool#0;class#ConnectionPool#0" />
+            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
             <element signature="method#getConnection#0;class#ConnectionPool#0" />
             <element signature="method#close#0;class#ConnectionPool#0" />
             <element signature="method#addConnection#0;class#ConnectionPool#0" />
@@ -954,41 +842,223 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../IDEA_PROECT/SORM_1/src/com/joezeo/sorm/core/CallBack.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/core/CallBack.java">
+    <entry file="jar://$PROJECT_DIR$/../../编程/框架组件/mysql-connector-java-5.1.39-bin.jar!/com/mysql/jdbc/PreparedStatement.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        <state relative-caret-position="145">
+          <caret line="1027" selection-start-line="1027" selection-end-line="1027" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../IDEA_PROECT/SORM_1/src/com/joezeo/sorm/core/Query.java">
+    <entry file="jar://$PROJECT_DIR$/../../编程/框架组件/mysql-connector-java-5.1.39-bin.jar!/com/mysql/jdbc/JDBC42PreparedStatement.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="166" column="31" selection-start-line="166" selection-start-column="18" selection-end-line="166" selection-end-column="31" />
+        <state relative-caret-position="206">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/utils/JDBCUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        <state relative-caret-position="520">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#setParams#0;class#JDBCUtils#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../编程/框架组件/mysql-connector-java-5.1.39-bin.jar!/com/mysql/jdbc/ConnectionImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="2770" selection-start-line="2770" selection-end-line="2770" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/utils/CloseUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../IDEA_PROECT/SORM_1/src/com/joezeo/sorm/utils/ReflectUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-330" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../编程/框架组件/mysql-connector-java-5.1.39-bin.jar!/com/mysql/jdbc/ResultSetImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="3806" selection-start-line="3806" selection-end-line="3806" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../IDEA_PROECT/SORM_1/src/com/joezeo/sorm/bean/TableInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-132" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/bean/TableInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-115">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/core/DBManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="25" column="52" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="method#createConnection#0;class#DBManager#0" />
+            <element signature="method#getConnection#0;class#DBManager#0" />
+            <element signature="method#closeConn#0;class#DBManager#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/utils/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding>
+            <element signature="e#174#175#0" expanded="true" />
+            <element signature="e#246#247#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/utils/ReflectionUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#invokeSet#0;class#ReflectionUtils#0" />
+            <element signature="method#invokeGet#0;class#ReflectionUtils#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/po/T_sreginfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/po/T_student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding>
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/po/T_treginfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../IDEA_PROECT/SORM_1/src/com/joezeo/sorm/core/TableContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-836">
+          <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/core/TableContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="963">
+          <caret line="66" column="11" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#loadPOClass#0;class#TableContext#0" />
+            <element signature="initializer##0;class#TableContext#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/bean/ColumnInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/bean/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-308">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="28" />
+          <folding>
+            <element signature="e#1359#1360#0" expanded="true" />
+            <element signature="e#1391#1392#0" expanded="true" />
+            <element signature="e#1441#1442#0" expanded="true" />
+            <element signature="e#1483#1484#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/xml/db_info.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/xml/MysqlHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="33" column="81" selection-start-line="33" selection-start-column="81" selection-end-line="33" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#startDocument#0;class#MysqlHandler#0" />
+            <element signature="method#startElement#0;class#MysqlHandler#0" />
+            <element signature="method#characters#0;class#MysqlHandler#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../IDEA_PROECT/SORM_1/src/com/joezeo/sorm/core/Query.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="153" column="21" lean-forward="true" selection-start-line="132" selection-start-column="8" selection-end-line="153" selection-end-column="21" />
+          <folding>
+            <element signature="method#executeDML#0;class#Query#0" />
+            <element signature="method#insert#0;class#Query#0" />
+            <element signature="method#delete#0;class#Query#0" />
+            <element signature="method#delete#1;class#Query#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/core/MysqlQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SM_DB/src/com/joezeo/core/Query.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="31" column="94" selection-start-line="31" selection-start-column="94" selection-end-line="31" selection-end-column="94" />
+        <state relative-caret-position="-145">
+          <caret line="115" column="6" lean-forward="true" selection-start-line="115" selection-start-column="6" selection-end-line="115" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#executeDML#0;class#Query#0" />
+            <element signature="method#insert#0;class#Query#0" />
+            <element signature="method#delete#0;class#Query#0" />
+            <element signature="method#update#0;class#Query#0" />
             <element signature="method#queryTemplate#0;class#Query#0" />
+            <element signature="method#queryRow#0;class#Query#0" />
           </folding>
         </state>
       </provider>

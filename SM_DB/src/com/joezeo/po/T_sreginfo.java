@@ -3,7 +3,7 @@ package com.joezeo.po;
 /**
  * po类：保存学生的注册信息
  */
-public class Sreginfo {
+public class T_sreginfo {
     /**
      * 学号 表主键 用作登陆名
      */
@@ -43,17 +43,17 @@ public class Sreginfo {
         this.pwd = pwd;
     }
 
-    public Sreginfo(Integer stuId, String name) {
+    public T_sreginfo(Integer stuId, String name) {
         this.stuId = stuId;
         this.name = name;
     }
 
-    public Sreginfo(Integer stuId, String name, String pwd) {
+    public T_sreginfo(Integer stuId, String name, String pwd) {
         this.stuId = stuId;
         this.name = name;
         this.pwd = pwd;
     }
 
-    public Sreginfo() {
+    public T_sreginfo() {
     }
 }

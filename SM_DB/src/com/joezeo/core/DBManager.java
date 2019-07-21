@@ -1,5 +1,6 @@
 package com.joezeo.core;
 
+import com.joezeo.bean.Configuration;
 import com.joezeo.xml.XmlSaxParseHome;
 
 import java.sql.Connection;
@@ -12,7 +13,7 @@ import java.sql.SQLException;
  */
 public class DBManager {
     //私有化构造器
-    private DBManager(){
+    private DBManager() {
     }
 
     /**
@@ -21,6 +22,10 @@ public class DBManager {
     private static Configuration configuration = null;
 
     private static ConnectionPool pool = null;
+
+    public static Configuration getConfiguration() {
+        return configuration;
+    }
 
     /**
      * 通过SAX解析 获取Configuration对象
@@ -31,9 +36,10 @@ public class DBManager {
 
     /**
      * 根据Configuration配置信息创建Connection连接对象
+     *
      * @return 连接对象
      */
-    private static Connection createConnection(){
+    public static Connection createConnection() {
         Connection conn = null;
 
         try {
@@ -52,14 +58,15 @@ public class DBManager {
 
     /**
      * 从数据库连接池中获取Connection对象
+     *
      * @return 连接对象
      */
-    public static Connection getConnection(){
+    public static Connection getConnection() {
         /*
          * 不能将pool的初始化放入放入static初始化块中
          * 否则DBManager 和 ConnectionPool会相互依赖 出现错误
          */
-        if(pool == null){
+        if (pool == null) {
             pool = new ConnectionPool();
         }
 
@@ -67,8 +74,21 @@ public class DBManager {
     }
 
     /**
+     * 关闭连接：将连接放回连接池中
+     *
+     * @param conn 连接对象
+     */
+    public static void closeConn(Connection conn) {
+        if (conn == null) {
+            return;
+        }
+
+        pool.close(conn);
+    }
+
+    /**
      * 空方法：用于加载DBManager类，获取static属性信息
      */
-    public static void loadDBManager(){
+    public static void loadDBManager() {
     }
 }

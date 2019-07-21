@@ -3,7 +3,7 @@ package com.joezeo.po;
 /**
  * po类：保存教师的注册信息
  */
-public class Treginfo {
+public class T_treginfo {
     /**
      * 教师号 表主键 用作登陆名
      */
@@ -43,12 +43,12 @@ public class Treginfo {
         this.pwd = pwd;
     }
 
-    public Treginfo(Integer teaId, String name, String pwd) {
+    public T_treginfo(Integer teaId, String name, String pwd) {
         this.teaId = teaId;
         this.name = name;
         this.pwd = pwd;
     }
 
-    public Treginfo() {
+    public T_treginfo() {
     }
 }
