@@ -6,6 +6,7 @@ import com.joezeo.utils.CloseUtils;
 import com.joezeo.utils.JDBCUtils;
 import com.joezeo.utils.ReflectionUtils;
 
+import javax.naming.event.ObjectChangeListener;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.sql.*;
@@ -182,6 +183,14 @@ public abstract class Query {
         return obj;
     }
 
+    /**
+     * 查询一行信息
+     *
+     * @param clazz  该表下对应的po类
+     * @param sql    sql语句
+     * @param params 参数列表
+     * @return po对象
+     */
     public Object queryRow(Class clazz, String sql, Object[] params) {
         return queryTemplate(clazz, sql, params, (ResultSet rs) -> {
             Object obj = null;
@@ -212,6 +221,27 @@ public abstract class Query {
             }
 
             return obj;
+        });
+    }
+
+    /**
+     * 查询一个指定的值
+     * @param sql sql语句
+     * @param params 参数列表
+     * @return 查询到的值
+     */
+    public Object queryValue(String sql, Object[] params){
+        return queryTemplate(null, sql, params, (ResultSet rs)->{
+            Object value = null;
+            try {
+                if(rs.next()){
+                    value = rs.getObject(1);
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+
+            return value;
         });
     }
 }
