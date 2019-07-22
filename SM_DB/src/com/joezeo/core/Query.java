@@ -68,7 +68,6 @@ public abstract class Query {
         Field[] fields = clazz.getDeclaredFields();
         for (Field f : fields) {
             String name = f.getName();
-            System.out.println(name);
             Object value = ReflectionUtils.invokeGet(name, obj);
 
             if (value != null) {

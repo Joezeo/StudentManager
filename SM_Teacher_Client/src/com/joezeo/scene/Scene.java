@@ -1,6 +1,5 @@
 package com.joezeo.scene;
 
-import com.joezeo.core.Request;
 import com.joezeo.message.RequestMessage;
 
 import java.util.Scanner;
@@ -137,6 +136,8 @@ public class Scene {
         msg.setId(Integer.parseInt(scanner.nextLine()));
         System.out.println("请输入学生姓名：");
         msg.setName(scanner.nextLine());
+        System.out.println("请输入学生成绩：");
+        msg.setScore(Integer.parseInt(scanner.nextLine()));
 
         return msg;
     }

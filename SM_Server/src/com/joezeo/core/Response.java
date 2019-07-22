@@ -43,6 +43,7 @@ public class Response {
     public void handleResponse(ResponseMessage msg) {
         this.msg = msg;
         sendResponse();
+        System.out.println("响应用户请求：" + msg);
     }
 
     private void sendResponse() {

@@ -2,6 +2,8 @@ package com.joezeo.opration;
 
 import com.joezeo.core.Query;
 import com.joezeo.core.QueryFactory;
+import com.joezeo.po.T_sreginfo;
+import com.joezeo.po.T_student;
 import com.joezeo.po.T_treginfo;
 
 /**
@@ -15,9 +17,9 @@ public class TOpration extends Opration {
 
     @Override
     public void login(Integer id, String pwd) {
-        //从数据库表t_sreginfo获取该id的正确密码
+        //从数据库表t_treginfo获取该id的正确密码
         Query query = QueryFactory.getQuery();
-        String sql = "SELECT pwd FROM t_sreginfo WHERE id=?";
+        String sql = "SELECT pwd FROM t_treginfo WHERE teaId=?";
         String cPwd = (String)query.queryValue(sql, new Object[]{id});
 
         if(pwd.equals(cPwd)){
@@ -50,13 +52,30 @@ public class TOpration extends Opration {
     }
 
     @Override
-    public void addStudent(Integer id, String name) {
+    public void addStudent(Integer id, String name, Integer score) {
+        T_student ts = new T_student();
+        ts.setStuId(id);
+        ts.setName(name);
+        ts.setScore(score);
 
+        Query query = QueryFactory.getQuery();
+        query.insert(ts);
+
+        msg.setIsRegister(null);
+        msg.setIsLogin(null);
+        msg.setInquiryContent(null);
     }
 
     @Override
     public void inquiry(Integer id) {
+        String sql = "SELECT * from t_student WHERE stuId=?";
 
+        Query query = QueryFactory.getQuery();
+        T_student value = (T_student)query.queryRow(T_student.class, sql, new Object[]{id});
+
+        msg.setInquiryContent(value.getName() + "：" + value.getScore());
+        msg.setIsLogin(null);
+        msg.setIsRegister(null);
     }
 
     public TOpration() {

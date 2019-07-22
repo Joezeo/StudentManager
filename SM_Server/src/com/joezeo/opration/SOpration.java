@@ -18,7 +18,7 @@ public class SOpration extends Opration {
     }
 
     @Override
-    public void addStudent(Integer id, String name) {
+    public void addStudent(Integer id, String name, Integer score) {
         //学生端不实现此方法
     }
 

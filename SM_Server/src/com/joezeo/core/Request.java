@@ -46,6 +46,7 @@ public class Request {
      */
     public ResponseMessage handleRequest() {
         getRequestMessage();
+        System.out.println("收到请求消息：" + msg);
 
         //根据msg内容进行相应的反射操作
         ResponseMessage resMsg = doReflection();
@@ -76,14 +77,13 @@ public class Request {
      * @return 响应信息
      */
     private ResponseMessage doReflection() {
-        System.out.println(msg);
         String methodName = msg.getOprationName();
         String character = msg.getCharacter();
 
         Class<Opration> clazz = null;
         Opration opration = null;
 
-        //根据character信息获取不同的class对象
+        //根据character信息获取不同的Opration class对象
         clazz = SReflectionUtils.getClassFromCharacter(character);
 
         //执行methodName相应的方法

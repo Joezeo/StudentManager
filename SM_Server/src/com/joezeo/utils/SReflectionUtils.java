@@ -104,8 +104,8 @@ public class SReflectionUtils {
         }
         else if (methodName.equals("addStudent")) {
             try {
-                Method m = clazz.getDeclaredMethod(methodName, new Class[]{Integer.class, String.class});
-                m.invoke(opration, msg.getId(), msg.getName());
+                Method m = clazz.getDeclaredMethod(methodName, new Class[]{Integer.class, String.class, Integer.class});
+                m.invoke(opration, msg.getId(), msg.getName(), msg.getScore());
             } catch (NoSuchMethodException e) {
                 e.printStackTrace();
                 System.out.println("没有找到相应的Opration方法：" + methodName);

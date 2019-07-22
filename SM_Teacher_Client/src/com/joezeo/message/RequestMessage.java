@@ -33,6 +33,11 @@ public class RequestMessage implements Message, Serializable {
     private String character;
 
     /**
+     * 学生成绩
+     */
+    private Integer score;
+
+    /**
      * 姓名
      */
     private String name;
@@ -75,6 +80,14 @@ public class RequestMessage implements Message, Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Integer getScore() {
+        return score;
+    }
+
+    public void setScore(Integer score) {
+        this.score = score;
     }
 
     public RequestMessage(String oprationName, Integer id, String pwd, String character) {

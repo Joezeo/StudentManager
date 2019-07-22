@@ -47,14 +47,14 @@ public abstract class Opration {
 
     /**
      * 教师端操作：
-     * 教师端将学生的学号、姓名存入数据库中
+     * 教师端将学生的学号、姓名、成绩存入数据库中
      * 学生在注册时 id和name必须和数据库中的信息匹配
-     * 相应的po类：Sreginfo
+     * 相应的po类：T_student
      *
      * @param id
      * @param name
      */
-    abstract void addStudent(Integer id, String name);
+    abstract void addStudent(Integer id, String name, Integer score);
 
     /**
      * 学生端操作：
