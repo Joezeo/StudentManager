@@ -6,11 +6,11 @@ import com.joezeo.opration.Opration;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-public class ReflectionUtils {
+public class SReflectionUtils {
     /**
      * 工具类 私有化构造器
      */
-    private ReflectionUtils() {
+    private SReflectionUtils() {
 
     }
 
@@ -77,8 +77,7 @@ public class ReflectionUtils {
     public static Opration invokeOpration(String methodName, Class<Opration> clazz, RequestMessage msg) {
         Opration opration = createOpration(clazz);
 
-        if (methodName.equals("login")
-                || methodName.equals("register")) {
+        if (methodName.equals("login")) {
             try {
                 Method m = clazz.getDeclaredMethod(methodName, new Class[]{Integer.class, String.class});
                 m.invoke(opration, msg.getId(), msg.getPwd());
@@ -90,7 +89,20 @@ public class ReflectionUtils {
             } catch (InvocationTargetException e) {
                 e.printStackTrace();
             }
-        } else if (methodName.equals("addStudent")) {
+        } else if (methodName.equals("register")) {
+            try {
+                Method m = clazz.getDeclaredMethod(methodName, new Class[]{Integer.class, String.class, String.class});
+                m.invoke(opration, msg.getId(), msg.getPwd(), msg.getName());
+            } catch (NoSuchMethodException e) {
+                e.printStackTrace();
+                System.out.println("没有找到相应的Opration方法：" + methodName);
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            } catch (InvocationTargetException e) {
+                e.printStackTrace();
+            }
+        }
+        else if (methodName.equals("addStudent")) {
             try {
                 Method m = clazz.getDeclaredMethod(methodName, new Class[]{Integer.class, String.class});
                 m.invoke(opration, msg.getId(), msg.getName());

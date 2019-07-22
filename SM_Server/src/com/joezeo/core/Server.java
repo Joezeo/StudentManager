@@ -1,6 +1,6 @@
 package com.joezeo.core;
 
-import com.joezeo.utils.CloseUtils;
+import com.joezeo.utils.ServerCloseUtils;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -56,7 +56,7 @@ public class Server {
                 e.printStackTrace();
                 System.out.println("ERROR：服务器通信异常");
                 isRunning = false;
-                CloseUtils.close(server);
+                ServerCloseUtils.close(server);
             }
         }
     }

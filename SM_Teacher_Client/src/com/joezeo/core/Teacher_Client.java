@@ -43,6 +43,7 @@ public class Teacher_Client {
             System.out.println("MESSAGE：初始化教师客户端成功");
         } catch (IOException e) {
             e.printStackTrace();
+            isRunning = false;
             System.out.println("ERROR：初始化教师客户端失败");
         }
     }
@@ -53,6 +54,10 @@ public class Teacher_Client {
      * @param args
      */
     public static void main(String[] args) {
+        if(!isRunning){
+            return;
+        }
+
         RequestMessage msg = null;
         Channel channel = null;
         /**

@@ -6,7 +6,6 @@ import com.joezeo.utils.CloseUtils;
 import com.joezeo.utils.JDBCUtils;
 import com.joezeo.utils.ReflectionUtils;
 
-import javax.naming.event.ObjectChangeListener;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.sql.*;
@@ -69,6 +68,7 @@ public abstract class Query {
         Field[] fields = clazz.getDeclaredFields();
         for (Field f : fields) {
             String name = f.getName();
+            System.out.println(name);
             Object value = ReflectionUtils.invokeGet(name, obj);
 
             if (value != null) {

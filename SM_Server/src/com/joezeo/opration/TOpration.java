@@ -2,6 +2,7 @@ package com.joezeo.opration;
 
 import com.joezeo.core.Query;
 import com.joezeo.core.QueryFactory;
+import com.joezeo.po.T_treginfo;
 
 /**
  * 教师端操作实现类
@@ -24,11 +25,28 @@ public class TOpration extends Opration {
         } else {
             msg.setIsLogin("false");//表示登陆失败
         }
+
+        msg.setInquiryContent(null);
+        msg.setIsRegister(null);
     }
 
     @Override
-    public void register(Integer id, String pwd) {
+    public void register(Integer id, String pwd, String name) {
         //在数据库表t_treginfo中
+        T_treginfo tInfo = new T_treginfo();
+
+        tInfo.setTeaId(id);
+        tInfo.setPwd(pwd);
+        tInfo.setName(name);
+
+        Query query = QueryFactory.getQuery();
+        query.insert(tInfo);
+
+        msg.setIsLogin(null);
+        msg.setInquiryContent(null);
+
+        //暂时不考虑注册失败的情况
+        msg.setIsRegister("true");
     }
 
     @Override

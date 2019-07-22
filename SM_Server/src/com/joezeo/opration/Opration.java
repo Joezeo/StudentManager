@@ -43,7 +43,7 @@ public abstract class Opration {
      * @param pwd 密码
      * @return 是否注册成功
      */
-    abstract void register(Integer id, String pwd);
+    abstract void register(Integer id, String pwd, String name);
 
     /**
      * 教师端操作：

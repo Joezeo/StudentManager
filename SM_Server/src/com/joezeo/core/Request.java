@@ -3,7 +3,7 @@ package com.joezeo.core;
 import com.joezeo.message.RequestMessage;
 import com.joezeo.message.ResponseMessage;
 import com.joezeo.opration.Opration;
-import com.joezeo.utils.ReflectionUtils;
+import com.joezeo.utils.SReflectionUtils;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
@@ -84,10 +84,10 @@ public class Request {
         Opration opration = null;
 
         //根据character信息获取不同的class对象
-        clazz = ReflectionUtils.getClassFromCharacter(character);
+        clazz = SReflectionUtils.getClassFromCharacter(character);
 
         //执行methodName相应的方法
-        opration = ReflectionUtils.invokeOpration(methodName, clazz, msg);
+        opration = SReflectionUtils.invokeOpration(methodName, clazz, msg);
 
         return opration.getMsg();
     }

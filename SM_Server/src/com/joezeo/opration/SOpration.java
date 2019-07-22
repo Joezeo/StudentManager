@@ -14,7 +14,7 @@ public class SOpration extends Opration {
     }
 
     @Override
-    public void register(Integer id, String pwd) {
+    public void register(Integer id, String pwd, String name) {
     }
 
     @Override

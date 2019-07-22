@@ -3,11 +3,11 @@ package com.joezeo.utils;
 import java.io.Closeable;
 import java.io.IOException;
 
-public class CloseUtils {
+public class ServerCloseUtils {
     /**
      * 私有化构造器
      */
-    private CloseUtils() {
+    private ServerCloseUtils() {
 
     }
 

@@ -87,6 +87,8 @@ public class Scene {
         msg.setId(Integer.parseInt(scanner.nextLine()));
         System.out.println("密码：");
         msg.setPwd(scanner.nextLine());
+        System.out.println("姓名：");
+        msg.setName(scanner.nextLine());
 
         return msg;
     }
