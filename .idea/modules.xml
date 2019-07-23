@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SM_DB/SM_DB.iml" filepath="$PROJECT_DIR$/SM_DB/SM_DB.iml" />
       <module fileurl="file://$PROJECT_DIR$/SM_Server/SM_Server.iml" filepath="$PROJECT_DIR$/SM_Server/SM_Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SM_Student_Client/SM_Student_Client.iml" filepath="$PROJECT_DIR$/SM_Student_Client/SM_Student_Client.iml" />
       <module fileurl="file://$PROJECT_DIR$/SM_Teacher_Client/SM_Teacher_Client.iml" filepath="$PROJECT_DIR$/SM_Teacher_Client/SM_Teacher_Client.iml" />
       <module fileurl="file://$PROJECT_DIR$/StudentManager.iml" filepath="$PROJECT_DIR$/StudentManager.iml" />
     </modules>

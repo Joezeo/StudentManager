@@ -1,21 +1,18 @@
 package com.joezeo.core;
 
+import com.joezeo.Scene.Scene;
 import com.joezeo.message.RequestMessage;
-import com.joezeo.scene.Scene;
 
 import java.io.IOException;
 import java.net.Socket;
 
-/**
- * 学生管理系统教师客户端
- */
-public class Teacher_Client {
+public class Student_Client {
     /**
-     * 教师客户端套接字socket 使用单例模式
+     * 学生客户端套接字socket 使用单例模式
      */
-    private static Socket teacherClient;
+    private static Socket studentClient;
     //私有化构造器
-    private Teacher_Client(){
+    private Student_Client(){
     }
 
     /**
@@ -38,18 +35,18 @@ public class Teacher_Client {
      */
     static {
         try {
-            teacherClient = new Socket("localhost", 8888);
+            studentClient = new Socket("localhost", 8888);
             isRunning = true;
-            System.out.println("MESSAGE：初始化教师客户端成功");
+            System.out.println("MESSAGE：初始化学生客户端成功");
         } catch (IOException e) {
             e.printStackTrace();
             isRunning = false;
-            System.out.println("ERROR：初始化教师客户端失败");
+            System.out.println("ERROR：初始化学生客户端失败");
         }
     }
 
     /**
-     * 教师端main函数入口
+     * 学生端main函数入口
      *
      * @param args
      */
@@ -71,7 +68,7 @@ public class Teacher_Client {
             } else {
                 msg = Scene.register();
             }
-            channel = new Channel(teacherClient, msg);
+            channel = new Channel(studentClient, msg);
             channel.run();
             isLogin = channel.isLogin();
             isRegister = channel.isRegister();
@@ -84,9 +81,6 @@ public class Teacher_Client {
             int i = Scene.oprationScene();
             switch (i){
                 case 1:
-                    msg = Scene.addStudentScene();
-                    break;
-                case 2:
                     msg = Scene.inquiry();
                     break;
             }

@@ -2,7 +2,6 @@ package com.joezeo.opration;
 
 import com.joezeo.core.Query;
 import com.joezeo.core.QueryFactory;
-import com.joezeo.po.T_sreginfo;
 import com.joezeo.po.T_student;
 import com.joezeo.po.T_treginfo;
 
